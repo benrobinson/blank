@@ -1,0 +1,18 @@
+<div class="navigation">
+  <nav class="nav container">
+    <a class="button toggle" href="#">Menu</a>
+    <ul class="menu">
+      {% for item in menu.get_items %}
+        <li><a class="link" href="{{item.get_link}}">{{item.title}}</a>
+          {% if item.get_children %}
+            <ul class="menu">
+              {% for child in item.get_children %}
+                <li><a href="{{child.get_link}}">{{child.title}}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
