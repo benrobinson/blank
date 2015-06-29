@@ -1,4 +1,4 @@
-# Blank
+# blank
 
 This is an extremely lightweight WordPress theme that uses Timber: https://github.com/jarednova/timber and my Micro CSS framework: https://github.com/pipbeard/micro
 
