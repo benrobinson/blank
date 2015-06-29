@@ -1,10 +1,9 @@
-<?php // Register Post Types
-
+<?php
 if ( ! class_exists( 'Timber' ) ) {
-	add_action( 'admin_notices', function() {
+  add_action( 'admin_notices', function() {
     echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';
-  } );
-	return;
+  });
+  return;
 }
 
 // Location of template files
